@@ -30,6 +30,7 @@ jobs:
     steps:
       - checkout: self
         clean: true
+        persistCredentials: false
       - bash: |
           echo "• init"
           bash /work/tssc/init.sh
